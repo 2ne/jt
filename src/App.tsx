@@ -13,8 +13,12 @@ function App(): ReactElement {
         <motion.div
           className="absolute inset-0 bg-[url('./assets/2.png')] bg-center bg-no-repeat bg-cover filter grayscale brightness-[25%]"
           animate={{
-            WebkitMaskImage: `radial-gradient(circle 150px at ${x}px ${y}px, transparent 0%, black 100%)`,
-            maskImage: `radial-gradient(circle 150px at ${x}px ${y}px, transparent 0%, black 100%)`
+            WebkitMaskImage: `radial-gradient(circle ${
+              isHovered ? '125px' : '0'
+            } at ${x}px ${y}px, transparent 0%, black 100%)`,
+            maskImage: `radial-gradient(circle ${
+              isHovered ? '125px' : '0'
+            } at ${x}px ${y}px, transparent 0%, black 100%)`
           }}
           transition={{ type: 'tween', ease: 'backOut', duration: 0.5 }}
         ></motion.div>
