@@ -11,7 +11,7 @@ function App(): ReactElement {
           </h1>
         </div>
       </header>
-      <section className="position relative grid place-content-center w-full min-h-[calc(100vh-9rem)] p-6 mx-auto text-center">
+      <section className="position relative grid place-content-center w-full min-h-[calc(100vh-10rem)] p-6 mx-auto text-center">
         <div className="space-y-2">
           <h2 className="line-through decoration-[3px] decoration-zinc-950 font-bold text-6xl leading-relaxed line-lg drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
             Lead Product Designer
