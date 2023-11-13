@@ -65,7 +65,7 @@ function App(): ReactElement {
                 }`}
               ></div>
               <div
-                className={`absolute inset-0 transition-opacity duration-500 pointer-events-none bg-zinc-700/25 backdrop-blur-md backdrop-saturate-150 backdrop-brightness-150 ${
+                className={`absolute inset-0 transition-opacity duration-500 pointer-events-none bg-zinc-700/25 ${
                   isSidebar
                     ? ' left-auto h-10 w-10 top-3 opacity-50 group-hover:opacity-100 right-2.5 rounded-full '
                     : ' rounded-lg opacity-0 '
