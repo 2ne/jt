@@ -42,13 +42,26 @@ function App(): ReactElement {
           ></motion.div>
         </div>
         <aside
-          className={`fixed z-10 inset-0 right-auto p-4 pt-[5.5rem] overflow-auto border-r shadow-lg shadow-zinc-950 border-zinc-500/10 bg-neutral-900/75 backdrop-blur-lg w-80 transition-transform duration-500 ${
+          className={`fixed z-10 inset-0 right-auto flex flex-col p-4 pt-[5.5rem] overflow-auto border-r shadow-lg shadow-zinc-950 border-zinc-500/10 bg-neutral-900/75 backdrop-blur-lg w-80 transition-transform duration-500 ${
             isSidebar
               ? 'transform translate-x-0'
               : 'transform -translate-x-full'
           }`}
         >
-          <div className="border-t border-b border-t-zinc-500/20 border-b-zinc-950"></div>
+          <div className="mb-4 border-t border-b border-t-zinc-500/20 border-b-zinc-950"></div>
+          <div className="text-zinc-100">Yoo how's your day going?</div>
+          <div className="sticky bottom-0 mt-auto">
+            <textarea
+              className="h-[5lh] max-h-[10lh] [form-sizing:content] w-full px-3 py-2 text-teal-500 transition-colors border shadow-inner outline-none resize-none rounded-xl border-zinc-500/20 bg-zinc-950/75 shadow-zinc-950 focus:border-zinc-600"
+              placeholder="Type a message..."
+            ></textarea>
+            <button
+              type="submit"
+              className="absolute bottom-0 right-0 px-4 py-4 font-semibold"
+            >
+              Send
+            </button>
+          </div>
         </aside>
         <header className="fixed top-0 z-10 w-full p-6 mx-auto">
           <div className="flex items-center gap-3.5">
