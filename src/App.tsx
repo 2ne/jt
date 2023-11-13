@@ -10,7 +10,7 @@ function App(): ReactElement {
   return (
     <div className="min-h-[500vh]">
       <div>
-        <div className="bg-[url('./assets/noise.png')] fixed inset-0 z-50 pointer-events-none opacity-20"></div>
+        <div className="bg-[url('./assets/noise.png')] fixed inset-0 z-50 pointer-events-none opacity-10"></div>
       </div>
       <div
         ref={ref}
@@ -22,9 +22,9 @@ function App(): ReactElement {
         }}
       >
         <div>
-          <div className="absolute inset-0 bg-[url('./assets/2.png')] bg-center bg-no-repeat bg-cover"></div>
+          <div className="absolute inset-0 bg-[url('./assets/bg.png')] bg-center bg-no-repeat bg-cover"></div>
           <motion.div
-            className="absolute inset-0 bg-[url('./assets/2.png')] bg-center bg-no-repeat bg-cover filter grayscale brightness-[25%]"
+            className="absolute inset-0 bg-[url('./assets/bg.png')] bg-center bg-no-repeat bg-cover filter grayscale brightness-[25%]"
             animate={{
               WebkitMaskImage: `radial-gradient(circle ${
                 isHovered ? '125px' : '0'
@@ -41,10 +41,22 @@ function App(): ReactElement {
           ></motion.div>
         </div>
         <header className="fixed top-0 w-full p-6 mx-auto">
-          <div className="flex items-center">
-            <h1 className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600 drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
-              James Toone
-            </h1>
+          <div className="flex items-center gap-3.5 relative">
+            <div>
+              <img
+                className="w-10 h-10 rounded-full ring-2 ring-zinc-950"
+                src="./assets/me.jpeg"
+              />
+              <span className="absolute w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-zinc-950 -top-0.5 -left-0.5 animate-pulse"></span>
+            </div>
+            <div className="text-sm">
+              <h1 className="text-zinc-100 font-semibold drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
+                James Toone
+              </h1>
+              <p className="drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
+                jamestoone@me.com
+              </p>
+            </div>
           </div>
         </header>
         <section className="relative grid w-full min-h-screen p-6 mx-auto text-center pointer-events-none position place-content-center">
