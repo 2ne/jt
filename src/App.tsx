@@ -44,7 +44,7 @@ function App(): ReactElement {
           <div className="flex items-center gap-3.5">
             <button
               type="button"
-              className="text-left cursor-pointer flex items-center gap-3.5 hover:bg-zinc-700/25 hover:backdrop-blur-md hover:backdrop-saturate-150 bg-transparent transition-all rounded-md -m-3 p-3 duration-700 will-change-[backdrop-filter]"
+              className="group text-left cursor-pointer flex items-center gap-3.5 hover:bg-zinc-700/25 hover:backdrop-blur-md hover:backdrop-saturate-150 bg-transparent transition-all rounded-md -m-3 p-3 duration-700 will-change-[backdrop-filter]"
             >
               <div className="relative">
                 <img
@@ -53,13 +53,32 @@ function App(): ReactElement {
                 />
                 <span className="absolute w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-zinc-950/75 -top-0.5 -left-0.5 animate-pulse"></span>
               </div>
-              <div className="text-sm">
-                <h1 className="text-zinc-100 font-semibold drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
-                  James Toone
-                </h1>
-                <p className="drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
-                  jamestoone@me.com
-                </p>
+              <div className="flex items-center gap-4 text-sm">
+                <div>
+                  <h1 className="text-zinc-100 font-semibold drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
+                    James Toone
+                  </h1>
+                  <p className="drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
+                    jamestoone@me.com
+                  </p>
+                </div>
+                <div>
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    className="w-8 h-8 -ml-10 text-transparent transition-all duration-700 group-hover:text-current group-hover:ml-0"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M10.75 8.75L14.25 12L10.75 15.25"
+                    ></path>
+                  </svg>
+                </div>
               </div>
             </button>
           </div>
