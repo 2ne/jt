@@ -8,7 +8,7 @@ function App(): ReactElement {
   const { x, y } = useMousePosition(ref)
 
   return (
-    <div className="min-h-[500vh] bg-zinc-950 text-zinc-50">
+    <div className="min-h-[500vh]">
       <div>
         <div className="bg-[url('./assets/noise.png')] fixed inset-0 z-50 pointer-events-none opacity-20"></div>
       </div>
@@ -40,14 +40,14 @@ function App(): ReactElement {
             transition={{ type: 'tween', ease: 'backOut', duration: 0.5 }}
           ></motion.div>
         </div>
-        <header className="sticky top-0 w-full p-6 mx-auto">
+        <header className="fixed top-0 w-full p-6 mx-auto">
           <div className="flex items-center">
             <h1 className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600 drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
               James Toone
             </h1>
           </div>
         </header>
-        <section className="pointer-events-none position relative grid place-content-center w-full min-h-[calc(100vh-10rem)] p-6 mx-auto text-center">
+        <section className="relative grid w-full min-h-screen p-6 mx-auto text-center pointer-events-none position place-content-center">
           <div className="space-y-2">
             <h2 className="line-through decoration-[3px] decoration-zinc-950 font-bold text-6xl leading-relaxed line-lg drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
               Lead Product Designer
