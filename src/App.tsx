@@ -40,7 +40,7 @@ function App(): ReactElement {
             transition={{ type: 'tween', ease: 'backOut', duration: 0.5 }}
           ></motion.div>
         </div>
-        <header className="fixed top-0 w-full p-6 mx-auto">
+        <header className="fixed top-0 z-10 w-full p-6 mx-auto">
           <div className="flex items-center gap-3.5">
             <button
               type="button"
