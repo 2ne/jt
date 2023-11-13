@@ -106,7 +106,7 @@ function App(): ReactElement {
                     height="24"
                     fill="none"
                     viewBox="0 0 24 24"
-                    className={`w-8 h-8 text-transparent transition-all duration-500 group-hover:text-current  ${
+                    className={`w-8 h-8 transition-all duration-500 group-hover:text-current  ${
                       isSidebar
                         ? 'rotate-180 ml-6 text-current'
                         : '-ml-8 text-transparent group-hover:ml-0'
