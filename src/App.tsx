@@ -42,7 +42,7 @@ function App(): ReactElement {
           ></motion.div>
         </div>
         <aside
-          className={`fixed inset-0 right-auto p-4 pt-[5.5rem] overflow-auto border-r shadow-lg shadow-zinc-950 border-zinc-500/10 bg-neutral-900/75 backdrop-blur-lg w-80 transition-transform duration-500 ${
+          className={`fixed z-10 inset-0 right-auto p-4 pt-[5.5rem] overflow-auto border-r shadow-lg shadow-zinc-950 border-zinc-500/10 bg-neutral-900/75 backdrop-blur-lg w-80 transition-transform duration-500 ${
             isSidebar
               ? 'transform translate-x-0'
               : 'transform -translate-x-full'
