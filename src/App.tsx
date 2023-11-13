@@ -48,7 +48,7 @@ function App(): ReactElement {
               : 'transform -translate-x-full'
           }`}
         >
-          <div className="border-t border-b border-t-zinc-500/25 border-b-zinc-950"></div>
+          <div className="border-t border-b border-t-zinc-500/20 border-b-zinc-950"></div>
         </aside>
         <header className="fixed top-0 z-10 w-full p-6 mx-auto">
           <div className="flex items-center gap-3.5">
@@ -57,12 +57,17 @@ function App(): ReactElement {
               onClick={() => {
                 setIsSidebar((prevIsSidebar) => !prevIsSidebar)
               }}
-              className="relative group text-left cursor-pointer flex items-center gap-3.5 -m-3 p-3"
+              className="relative group text-left cursor-pointer flex items-center gap-3.5 -m-3 p-3 outline-none select-none"
             >
               <div
-                className={`absolute inset-0 transition-opacity duration-500 pointer-events-none group-hover:opacity-100 bg-zinc-700/50 backdrop-blur-md backdrop-saturate-150 backdrop-brightness-150 ${
+                className={`absolute inset-0 transition-opacity duration-500 rounded-lg opacity-0 pointer-events-none  bg-zinc-700/20 backdrop-blur-md backdrop-saturate-150 backdrop-brightness-150 ${
+                  isSidebar ? 'opacity-0' : 'group-hover:opacity-100'
+                }`}
+              ></div>
+              <div
+                className={`absolute inset-0 transition-opacity duration-500 pointer-events-none bg-zinc-700/25 backdrop-blur-md backdrop-saturate-150 backdrop-brightness-150 ${
                   isSidebar
-                    ? ' left-auto h-10 w-10 top-3 opacity-50 right-2.5 rounded-full '
+                    ? ' left-auto h-10 w-10 top-3 opacity-50 group-hover:opacity-100 right-2.5 rounded-full '
                     : ' rounded-lg opacity-0 '
                 }`}
               ></div>
