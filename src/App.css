@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.text-balance {
-  text-wrap: balance;
+@layer components {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .line {
+    @apply relative after:absolute after:inset-x-0 after:top-1/2 after:-translate-y-1/2 after:h-[3px] after:bg-zinc-950 after:mt-px;
+  }
 }

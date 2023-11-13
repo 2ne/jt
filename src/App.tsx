@@ -21,7 +21,7 @@ function App(): ReactElement {
           setIsHovered(false)
         }}
       >
-        <div>
+        <div className="pointer-events-none">
           <div className="absolute inset-0 bg-[url('./assets/bg.png')] bg-center bg-no-repeat bg-cover"></div>
           <motion.div
             className="absolute inset-0 bg-[url('./assets/bg.png')] bg-center bg-no-repeat bg-cover filter grayscale brightness-[25%]"
@@ -61,7 +61,7 @@ function App(): ReactElement {
         </header>
         <section className="relative grid w-full min-h-screen p-6 mx-auto text-center pointer-events-none position place-content-center">
           <div className="space-y-2">
-            <h2 className="line-through decoration-[3px] decoration-zinc-950 font-bold text-6xl leading-relaxed line-lg drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
+            <h2 className="sm:whitespace-nowrap max-sm:pb-4 max-sm:line-through max-sm:decoration-[3px] max-sm:decoration-zinc-950 sm:leading-normal font-bold text-6xl sm:line drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
               Lead Product Designer
             </h2>
             <p className="text-xl font-semibold text-zinc-400/90 text-balance w-full mx-auto max-w-[48ch] drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
