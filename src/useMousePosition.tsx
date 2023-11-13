@@ -1,17 +1,30 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, RefObject } from 'react'
 
-const useMousePosition = () => {
+const useMousePosition = (elementRef: RefObject<HTMLElement>) => {
   const [mousePosition, setMousePosition] = useState({ x: null, y: null })
 
-  const updateMousePosition = (e: { clientX: any; clientY: any }) => {
-    setMousePosition({ x: e.clientX, y: e.clientY })
+  const updateMousePosition = (e: MouseEvent) => {
+    if (elementRef.current) {
+      const { left, top } = elementRef.current.getBoundingClientRect()
+      setMousePosition({
+        x: e.clientX - left,
+        y: e.clientY - top
+      })
+    }
   }
 
   useEffect(() => {
-    window.addEventListener('mousemove', updateMousePosition)
+    const element = elementRef.current
+    if (element) {
+      element.addEventListener('mousemove', updateMousePosition)
+    }
 
-    return () => window.removeEventListener('mousemove', updateMousePosition)
-  }, [])
+    return () => {
+      if (element) {
+        element.removeEventListener('mousemove', updateMousePosition)
+      }
+    }
+  }, [elementRef])
 
   return mousePosition
 }
