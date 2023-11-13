@@ -52,7 +52,7 @@ function App(): ReactElement {
             <h2 className="line-through decoration-[3px] decoration-zinc-950 font-bold text-6xl leading-relaxed line-lg drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
               Lead Product Designer
             </h2>
-            <p className="text-xl font-semibold text-zinc-500 text-balance w-full mx-auto max-w-[48ch] drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
+            <p className="text-xl font-semibold text-zinc-400/90 text-balance w-full mx-auto max-w-[48ch] drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
               Creating visually stunning & intuitive designs that provide
               exceptional user experiences.
             </p>
