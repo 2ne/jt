@@ -40,6 +40,9 @@ function App(): ReactElement {
             transition={{ type: 'tween', ease: 'backOut', duration: 0.5 }}
           ></motion.div>
         </div>
+        <aside className="fixed inset-0 right-auto p-6 pt-[5.5rem] overflow-auto border-r shadow-lg shadow-zinc-950 border-zinc-500/10 bg-neutral-900/75 backdrop-blur-lg w-80">
+          <div className="border-t border-b border-t-zinc-500/25 border-b-zinc-950"></div>
+        </aside>
         <header className="fixed top-0 z-10 w-full p-6 mx-auto">
           <div className="flex items-center gap-3.5">
             <button
