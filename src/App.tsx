@@ -41,22 +41,27 @@ function App(): ReactElement {
           ></motion.div>
         </div>
         <header className="fixed top-0 w-full p-6 mx-auto">
-          <div className="flex items-center gap-3.5 relative">
-            <div>
-              <img
-                className="w-10 h-10 rounded-full ring-2 ring-zinc-950"
-                src="./assets/me.jpeg"
-              />
-              <span className="absolute w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-zinc-950 -top-0.5 -left-0.5 animate-pulse"></span>
-            </div>
-            <div className="text-sm">
-              <h1 className="text-zinc-100 font-semibold drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
-                James Toone
-              </h1>
-              <p className="drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
-                jamestoone@me.com
-              </p>
-            </div>
+          <div className="flex items-center gap-3.5">
+            <button
+              type="button"
+              className="text-left cursor-pointer flex items-center gap-3.5 hover:bg-zinc-700/25 hover:backdrop-blur-md hover:backdrop-saturate-150 bg-transparent transition-all rounded-md -m-3 p-3 duration-700 will-change-[backdrop-filter]"
+            >
+              <div className="relative">
+                <img
+                  className="w-10 h-10 rounded-full ring-2 ring-zinc-950/75"
+                  src="./assets/me.jpeg"
+                />
+                <span className="absolute w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-zinc-950/75 -top-0.5 -left-0.5 animate-pulse"></span>
+              </div>
+              <div className="text-sm">
+                <h1 className="text-zinc-100 font-semibold drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
+                  James Toone
+                </h1>
+                <p className="drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
+                  jamestoone@me.com
+                </p>
+              </div>
+            </button>
           </div>
         </header>
         <section className="relative grid w-full min-h-screen p-6 mx-auto text-center pointer-events-none position place-content-center">
