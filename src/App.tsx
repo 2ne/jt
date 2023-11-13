@@ -52,12 +52,12 @@ function App(): ReactElement {
           <div className="text-zinc-100">Yoo how's your day going?</div>
           <div className="sticky bottom-0 mt-auto">
             <textarea
-              className="h-[5lh] max-h-[10lh] [form-sizing:content] w-full px-3 py-2 text-teal-500 transition-colors border shadow-inner outline-none resize-none rounded-xl border-zinc-500/20 bg-zinc-950/75 shadow-zinc-950 focus:border-zinc-600"
+              className="h-[5lh] max-h-[10lh] [form-sizing:content] w-full px-3 py-2 placeholder:text-zinc-700 text-teal-500 transition-colors border shadow-inner outline-none resize-none rounded-xl border-zinc-500/20 bg-zinc-950/75 shadow-zinc-950 focus:border-zinc-600"
               placeholder="Type a message..."
             ></textarea>
             <button
               type="submit"
-              className="absolute bottom-0 right-0 px-4 py-4 font-semibold"
+              className="absolute bottom-0 right-0 px-4 py-4 font-semibold transition-colors hover:text-zinc-50"
             >
               Send
             </button>
