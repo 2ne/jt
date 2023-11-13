@@ -44,8 +44,9 @@ function App(): ReactElement {
           <div className="flex items-center gap-3.5">
             <button
               type="button"
-              className="group text-left cursor-pointer flex items-center gap-3.5 hover:bg-zinc-700/25 hover:backdrop-blur-md hover:backdrop-saturate-150 bg-transparent transition-all rounded-md -m-3 p-3 duration-700 will-change-[backdrop-filter]"
+              className="relative group text-left cursor-pointer flex items-center gap-3.5 -m-3 p-3"
             >
+              <div className="absolute inset-0 transition-opacity duration-500 rounded-md opacity-0 pointer-events-none group-hover:opacity-100 bg-zinc-700/50 backdrop-blur-md backdrop-saturate-150 backdrop-brightness-150"></div>
               <div className="relative">
                 <img
                   className="w-10 h-10 rounded-full ring-2 ring-zinc-950/75"
@@ -53,7 +54,7 @@ function App(): ReactElement {
                 />
                 <span className="absolute w-2.5 h-2.5 rounded-full bg-emerald-500 ring-2 ring-zinc-950/75 -top-0.5 -left-0.5 animate-pulse"></span>
               </div>
-              <div className="flex items-center gap-4 text-sm">
+              <div className="relative flex items-center gap-3.5 text-sm">
                 <div>
                   <h1 className="text-zinc-100 font-semibold drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
                     James Toone
@@ -68,7 +69,7 @@ function App(): ReactElement {
                     height="24"
                     fill="none"
                     viewBox="0 0 24 24"
-                    className="w-8 h-8 -ml-10 text-transparent transition-all duration-700 group-hover:text-current group-hover:ml-0"
+                    className="w-8 h-8 -ml-8 text-transparent transition-all duration-500 group-hover:text-current group-hover:ml-0"
                   >
                     <path
                       stroke="currentColor"
