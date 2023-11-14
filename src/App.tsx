@@ -42,7 +42,7 @@ function App(): ReactElement {
           ></motion.div>
         </div>
         <aside
-          className={`fixed text-sm z-10 inset-0 right-auto flex flex-col p-4 pt-[5.5rem] overflow-auto border-r shadow-lg shadow-zinc-950 border-zinc-500/10 bg-neutral-900/75 backdrop-blur-lg w-80 transition-transform duration-500 ${
+          className={`fixed text-sm z-10 inset-0 right-auto flex flex-col p-4 pt-[5.5rem] overflow-auto border-r shadow-lg shadow-zinc-950 border-zinc-500/10 bg-neutral-800/50 backdrop-blur-lg w-80 transition-transform duration-500 ${
             isSidebar
               ? 'transform translate-x-0'
               : 'transform -translate-x-full'
@@ -51,11 +51,19 @@ function App(): ReactElement {
           <div className="mb-4 border-t border-b border-t-zinc-500/20 border-b-zinc-950"></div>
           <div className="text-zinc-100">Yoo how's your day going?</div>
           <div className="sticky bottom-0 mt-auto">
-            <textarea
-              spellCheck={false}
-              className="h-[5lh] max-h-[10lh] [form-sizing:content] w-full px-3 py-2 placeholder:text-zinc-700 text-teal-500 transition-colors border shadow-inner outline-none resize-none rounded-xl border-zinc-500/20 bg-zinc-950/75 shadow-zinc-950 focus:border-zinc-600"
-              placeholder="Type a message..."
-            ></textarea>
+            <div className="relative">
+              <textarea
+                spellCheck={false}
+                className="h-[6lh] max-h-[10lh] [form-sizing:content] w-full px-3 pl-12 py-3.5 placeholder:text-zinc-700 text-teal-400 transition-colors border shadow-inner outline-none resize-none rounded-xl border-zinc-500/20 bg-zinc-950/75 shadow-zinc-950 focus:border-zinc-600"
+                placeholder="Type a message..."
+              ></textarea>
+              <button
+                type="button"
+                className="absolute grid -mt-px text-[10px] text-white transition-colors bg-teal-600 rounded-full w-7 h-7 hover:bg-teal-700 top-3 left-3 place-content-center"
+              >
+                <div className="tracking-tight">YOU</div>
+              </button>
+            </div>
             <button
               type="submit"
               className="absolute bottom-0 right-0 px-4 py-4 font-semibold transition-colors hover:text-zinc-50"
