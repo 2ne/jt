@@ -1,12 +1,22 @@
 import React, { ReactElement, useRef, useState } from 'react'
 import useMousePosition from './useMousePosition'
 import { motion } from 'framer-motion'
+import useAutosizeTextArea from './textarea'
 
 function App(): ReactElement {
   const [isSidebar, setIsSidebar] = useState(false)
   const [isHovered, setIsHovered] = useState(false)
   const ref = useRef(null)
   const { x, y } = useMousePosition(ref)
+
+  const [value, setValue] = useState('')
+  const textAreaRef = useRef<HTMLTextAreaElement>(null)
+  useAutosizeTextArea(textAreaRef.current, value)
+
+  const handleChange = (evt: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const val = evt.target?.value
+    setValue(val)
+  }
 
   return (
     <div className="min-h-[200vh]">
@@ -53,8 +63,12 @@ function App(): ReactElement {
           <div className="sticky bottom-0 mt-auto">
             <div className="relative">
               <textarea
+                onChange={handleChange}
+                ref={textAreaRef}
+                rows={5}
+                value={value}
                 spellCheck={false}
-                className="h-[6lh] max-h-[10lh] [form-sizing:content] w-full px-3 pl-12 py-3.5 placeholder:text-zinc-700 text-teal-400 transition-colors border shadow-inner outline-none resize-none rounded-xl border-zinc-500/20 bg-zinc-950/75 shadow-zinc-950 focus:border-zinc-600"
+                className="min-h-[5lh] max-h-[10lh] w-full px-3 pl-12 py-3.5 placeholder:text-zinc-700 text-teal-400 transition-colors border shadow-inner outline-none resize-none rounded-xl border-zinc-500/20 bg-zinc-950/75 shadow-zinc-950 focus:border-zinc-600"
                 placeholder="Type a message..."
               ></textarea>
               <button
