@@ -69,13 +69,13 @@ function App(): ReactElement {
                 value={value}
                 spellCheck={false}
                 className="min-h-[5lh] max-h-[10lh] w-full px-3 pl-12 py-3.5 placeholder:text-zinc-700 text-teal-400 transition-colors border shadow-inner outline-none resize-none rounded-xl border-zinc-500/20 bg-zinc-950/75 shadow-zinc-950 focus:border-zinc-600"
-                placeholder="Type a message..."
+                placeholder="Send me a message..."
               ></textarea>
               <button
                 type="button"
-                className="absolute grid -mt-px text-[10px] text-white transition-colors bg-teal-600 rounded-full w-7 h-7 hover:bg-teal-700 top-3 left-3 place-content-center"
+                className="absolute grid -mt-px text-xs text-white transition-colors bg-teal-600 rounded-full w-7 h-7 hover:bg-teal-700 top-3 left-3 place-content-center"
               >
-                <div className="tracking-tight">YOU</div>
+                <div className="tracking-tight">?</div>
               </button>
             </div>
             <button
