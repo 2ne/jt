@@ -37,18 +37,14 @@ function App(): ReactElement {
           <motion.div
             className="absolute inset-0 bg-[url('./assets/bg.png')] bg-center bg-no-repeat bg-cover filter grayscale brightness-[25%]"
             animate={{
-              WebkitMaskImage: `radial-gradient(circle ${
-                isHovered ? '125px' : '0'
-              } at ${x}px ${y}px, rgba(0, 0, 0, ${
+              WebkitMaskImage: `radial-gradient(circle 125px at ${x}px ${y}px, rgba(0, 0, 0, ${
                 isHovered ? 0 : 1
               }) 0%, black 100%)`,
-              maskImage: `radial-gradient(circle ${
-                isHovered ? '125px' : '0'
-              } at ${x}px ${y}px, rgba(0, 0, 0, ${
+              maskImage: `radial-gradient(circle 125px at ${x}px ${y}px, rgba(0, 0, 0, ${
                 isHovered ? 0 : 1
               }) 0%, black 100%)`
             }}
-            transition={{ type: 'tween', ease: 'backOut', duration: 0.5 }}
+            transition={{ type: 'tween', ease: 'backOut', duration: 0 }}
           ></motion.div>
         </div>
         <aside
@@ -169,7 +165,7 @@ function App(): ReactElement {
         </header>
         <section className="relative grid w-full min-h-screen p-6 mx-auto text-center pointer-events-none position place-content-center">
           <div className="space-y-2">
-            <h2 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 max-sm:line-through max-sm:decoration-[3px] max-sm:decoration-zinc-950 sm:leading-normal font-bold text-6xl sm:line drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
+            <h2 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 sm:leading-normal font-bold text-6xl drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
               Lead Product Designer
             </h2>
             <p className="text-xl font-semibold text-zinc-400/90 text-balance w-full mx-auto max-w-[48ch] drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
