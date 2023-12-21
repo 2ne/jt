@@ -41,7 +41,7 @@
 .hero-vinyl-animation {
   animation: hero-vinyl ease-out forwards;
   animation-timeline: scroll();
-  animation-range: entry 5% exit -5%;
+  animation-range: entry 5% exit;
   opacity: 0;
   scale: 0.75;
 }
