@@ -19,9 +19,9 @@ function App(): ReactElement {
   }
 
   return (
-    <div className="min-h-[200vh]">
+    <div className="min-h-[200vh] overflow-clip">
       <div
-        className="fixed inset-0"
+        className="fixed inset-0 hero-animation"
         ref={ref}
         onMouseEnter={() => {
           setIsHovered(true)
@@ -156,7 +156,7 @@ function App(): ReactElement {
           </button>
         </div>
       </header>
-      <section className="relative grid w-full min-h-screen p-6 mx-auto text-center pointer-events-none position place-content-center">
+      <section className="relative grid w-full min-h-screen p-6 mx-auto text-center pointer-events-none place-content-center hero-text-animation">
         <div className="space-y-2">
           <h2 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 sm:leading-normal font-bold text-6xl drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
             Lead Product Designer
@@ -165,6 +165,19 @@ function App(): ReactElement {
             Creating visually stunning & intuitive designs that provide
             exceptional user experiences.
           </p>
+        </div>
+      </section>
+      <section className="h-[150vh] relative w-full p-6 mx-auto text-center pointer-events-none hero-vinyl-animation">
+        <div className="sticky mb-40 top-20">
+          <h3 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 sm:leading-normal font-bold text-3xl drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
+            Vinyl Visions
+          </h3>
+          <p className="text-xl font-semibold text-zinc-500/90 drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
+            Brand Identity · Website Design · UX Design · UI Development
+          </p>
+        </div>
+        <div className="relative">
+          <img src="./assets/VinylVisions.png" className="mx-auto" />
         </div>
       </section>
     </div>
