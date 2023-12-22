@@ -167,17 +167,34 @@ function App(): ReactElement {
           </p>
         </div>
       </section>
-      <section className="h-[150vh] relative w-full p-6 mx-auto text-center pointer-events-none hero-vinyl-animation">
-        <div className="sticky mb-40 top-20">
-          <h3 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 sm:leading-normal font-bold text-3xl drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
-            Vinyl Visions
-          </h3>
-          <p className="text-xl font-semibold text-zinc-500/90 drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
-            Brand Identity · Website Design · UX Design · UI Development
-          </p>
+      <section className="relative w-full min-h-screen p-6 mx-auto pointer-events-none hero-vinyl-animation">
+        <div className="relative mx-auto max-w-7xl">
+          <div className="sticky mb-40 top-32">
+            <h3 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 sm:leading-normal font-bold text-3xl drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
+              Vinyl Visions
+            </h3>
+            <p className="text-xl font-semibold text-zinc-500/90 drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
+              Brand Identity · Website Design · UX Design · UI Development
+            </p>
+          </div>
+          <div className="relative -mx-3">
+            <img src="./assets/VinylVisions.png" className="mx-auto" />
+          </div>
         </div>
-        <div className="relative">
-          <img src="./assets/VinylVisions.png" className="mx-auto" />
+      </section>
+      <section className="relative w-full min-h-screen p-6 mx-auto pointer-events-none hero-prohire-animation">
+        <div className="relative mx-auto max-w-7xl">
+          <div className="sticky mb-40 top-32">
+            <h3 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 sm:leading-normal font-bold text-3xl drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
+              Vinyl Visions
+            </h3>
+            <p className="text-xl font-semibold text-zinc-500/90 drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
+              Brand Identity · Website Design · UX Design · UI Development
+            </p>
+          </div>
+          <div className="relative -mx-3">
+            <img src="./assets/VinylVisions.png" className="mx-auto" />
+          </div>
         </div>
       </section>
     </div>

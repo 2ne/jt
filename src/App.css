@@ -27,7 +27,7 @@
 
 .hero-text-animation {
   animation: hero-text ease-out forwards;
-  animation-timeline: scroll();
+  animation-timeline: view();
   animation-range: exit -5%;
 }
 
@@ -40,13 +40,34 @@
 
 .hero-vinyl-animation {
   animation: hero-vinyl ease-out forwards;
-  animation-timeline: scroll();
-  animation-range: entry 5% exit;
+  animation-timeline: view();
+  animation-range: entry 25% exit 50%;
   opacity: 0;
   scale: 0.75;
 }
 
 @keyframes hero-vinyl {
+  25%,
+  75% {
+    opacity: 1;
+    scale: 1;
+  }
+  0,
+  100% {
+    opacity: 0;
+    scale: 0.75;
+  }
+}
+
+.hero-prohire-animation {
+  animation: hero-prohire ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 0% exit 50%;
+  opacity: 0;
+  scale: 0.75;
+}
+
+@keyframes hero-prohire {
   25%,
   75% {
     opacity: 1;
