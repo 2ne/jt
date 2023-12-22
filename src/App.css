@@ -29,7 +29,6 @@
     animation-timeline: view();
     animation-range: exit -5%;
   }
-
   @keyframes hero-text {
     100% {
       opacity: 0;

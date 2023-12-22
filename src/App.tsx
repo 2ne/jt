@@ -158,7 +158,7 @@ function App(): ReactElement {
       </header>
       <section className="relative grid w-full min-h-screen p-6 mx-auto text-center pointer-events-none place-content-center hero-text-animation">
         <div className="space-y-2">
-          <h2 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 sm:leading-normal font-bold text-6xl drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
+          <h2 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 sm:leading-normal font-semibold text-6xl drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
             Lead Product Designer
           </h2>
           <p className="text-xl font-semibold text-zinc-400/90 text-balance w-full mx-auto max-w-[48ch] drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
@@ -170,7 +170,7 @@ function App(): ReactElement {
       <section className="relative w-full min-h-screen p-6 mx-auto pointer-events-none hero-vinyl-animation">
         <div className="relative mx-auto max-w-7xl">
           <div className="sticky mb-40 top-32">
-            <h3 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 sm:leading-normal font-bold text-3xl drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
+            <h3 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 sm:leading-normal font-semibold text-3xl drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
               Vinyl Visions
             </h3>
             <p className="text-xl font-semibold text-zinc-500/90 drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
@@ -185,7 +185,7 @@ function App(): ReactElement {
       <section className="relative w-full min-h-screen p-6 mx-auto pointer-events-none hero-prohire-animation">
         <div className="relative mx-auto max-w-7xl">
           <div className="sticky mb-40 top-32">
-            <h3 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 sm:leading-normal font-bold text-3xl drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
+            <h3 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 sm:leading-normal font-semibold text-3xl drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
               Prohire
             </h3>
             <p className="text-xl font-semibold text-zinc-500/90 drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
@@ -200,7 +200,7 @@ function App(): ReactElement {
       <section className="relative w-full min-h-screen p-6 mx-auto pointer-events-none hero-prohire-animation">
         <div className="relative mx-auto max-w-7xl">
           <div className="sticky mb-40 top-32">
-            <h3 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 sm:leading-normal font-bold text-3xl drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
+            <h3 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 sm:leading-normal font-semibold text-3xl drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
               Prohire
             </h3>
             <p className="text-xl font-semibold text-zinc-500/90 drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
