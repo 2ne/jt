@@ -11,71 +11,67 @@
   }
 }
 
-.hero-animation {
-  animation: hero ease-out forwards;
-  animation-timeline: view();
-  animation-range: exit;
-  transform-origin: center 50px 200px;
-}
-
-@keyframes hero {
-  100% {
-    opacity: 0;
-    scale: 1.15;
+@supports (animation-timeline: view()) {
+  .hero-animation {
+    animation: hero ease-out forwards;
+    animation-timeline: view();
+    animation-range: exit;
+    transform-origin: center 50px 200px;
   }
-}
-
-.hero-text-animation {
-  animation: hero-text ease-out forwards;
-  animation-timeline: view();
-  animation-range: exit -5%;
-}
-
-@keyframes hero-text {
-  100% {
-    opacity: 0;
-    scale: 0.85;
+  @keyframes hero {
+    100% {
+      opacity: 0;
+      scale: 1.15;
+    }
   }
-}
-
-.hero-vinyl-animation {
-  animation: hero-vinyl ease-out forwards;
-  animation-timeline: view();
-  animation-range: entry 50% exit 75%;
-  opacity: 0;
-  scale: 0.85;
-}
-
-@keyframes hero-vinyl {
-  25%,
-  75% {
-    opacity: 1;
-    scale: 1;
+  .hero-text-animation {
+    animation: hero-text ease-out forwards;
+    animation-timeline: view();
+    animation-range: exit -5%;
   }
-  0,
-  100% {
+
+  @keyframes hero-text {
+    100% {
+      opacity: 0;
+      scale: 0.85;
+    }
+  }
+  .hero-vinyl-animation {
+    animation: hero-vinyl ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 50% exit 75%;
     opacity: 0;
     scale: 0.85;
   }
-}
-
-.hero-prohire-animation {
-  animation: hero-prohire ease-out forwards;
-  animation-timeline: view();
-  animation-range: entry 50% exit 75%;
-  opacity: 0;
-  scale: 0.85;
-}
-
-@keyframes hero-prohire {
-  25%,
-  75% {
-    opacity: 1;
-    scale: 1;
+  @keyframes hero-vinyl {
+    25%,
+    75% {
+      opacity: 1;
+      scale: 1;
+    }
+    0,
+    100% {
+      opacity: 0;
+      scale: 0.85;
+    }
   }
-  0,
-  100% {
+  .hero-prohire-animation {
+    animation: hero-prohire ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 50% exit 75%;
     opacity: 0;
     scale: 0.85;
+  }
+  @keyframes hero-prohire {
+    25%,
+    75% {
+      opacity: 1;
+      scale: 1;
+    }
+    0,
+    100% {
+      opacity: 0;
+      scale: 0.85;
+    }
   }
 }
