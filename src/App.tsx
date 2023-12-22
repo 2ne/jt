@@ -212,6 +212,7 @@ function App(): ReactElement {
           </div>
         </div>
       </section>
+      <section className="relative w-full min-h-screen p-6 mx-auto pointer-events-none hero-prohire-animation"></section>
     </div>
   )
 }
