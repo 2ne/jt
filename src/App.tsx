@@ -186,10 +186,10 @@ function App(): ReactElement {
         <div className="relative mx-auto max-w-7xl">
           <div className="sticky mb-40 top-32">
             <h3 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 sm:leading-normal font-bold text-3xl drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
-              Vinyl Visions
+              Prohire
             </h3>
             <p className="text-xl font-semibold text-zinc-500/90 drop-shadow-[0_0_12px_rgba(9,9,1,1)]">
-              Brand Identity · Website Design · UX Design · UI Development
+              UX Design · UI Development
             </p>
           </div>
           <div className="relative -mx-3">
