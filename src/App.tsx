@@ -169,7 +169,7 @@ function App(): ReactElement {
       </section>
       <section className="relative w-full min-h-screen p-6 mx-auto pointer-events-none hero-vinyl-animation">
         <div className="relative mx-auto max-w-7xl">
-          <div className="sticky mb-40 top-32">
+          <div className="sticky mb-40 top-32 move-left-animation">
             <h3 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 sm:leading-normal font-bold text-3xl drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
               Vinyl Visions
             </h3>
@@ -184,7 +184,7 @@ function App(): ReactElement {
       </section>
       <section className="relative w-full min-h-screen p-6 mx-auto pointer-events-none hero-prohire-animation">
         <div className="relative mx-auto max-w-7xl">
-          <div className="sticky mb-40 top-32">
+          <div className="sticky mb-40 top-32 move-left-animation">
             <h3 className="tracking-[-0.5px] sm:whitespace-nowrap max-sm:pb-6 sm:leading-normal font-bold text-3xl drop-shadow-[0_0_12px_rgba(9,9,1,1)] text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-600">
               Prohire
             </h3>

@@ -79,3 +79,24 @@
     scale: 0.75;
   }
 }
+
+.move-left-animation {
+  animation: move-left ease-out forwards;
+  animation-timeline: view();
+  animation-range: entry 50% exit 100%;
+  transform: translateX(-25%);
+  opacity: 0;
+}
+
+@keyframes move-left {
+  25%,
+  75% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  0,
+  100% {
+    opacity: 0;
+    transform: translateX(-25%);
+  }
+}
